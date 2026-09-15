@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+.env
+
+# ZCode / Agnes 运行时
+.agents/
+.zcode/
+cli/
+workspace/
+v2/bot-state.v2.json
+v2/credentials.json
+v2/coding-plan-cache.json
+v2/tasks-index.sqlite*
+v2/logs/
+v2/checkpoints/
+v2/crash/
+v2/telemetry-state.json
+v2/bots-runtime-locks/
+v2/certs/
+
+# IMA
+.config/ima/
+
+# Loop 运行时状态（保留模板，不提交动态数据）
+.loop/state.md
+.loop/run-log.md
+.loop/SUCCESS_PATTERNS.jsonl
+.loop/FAILURES_REPORT.md
+
+# Learnings 运行时（保留空模板）
+.learnings/LEARNINGS.md
+.learnings/ERRORS.md
+.learnings/FEATURE_REQUESTS.md
+.learnings/session-state.md
+.learnings/gep_*.json
+.learnings/gep_*.jsonl
+.learnings/rejected_edits.json
+.learnings/working-buffer.md
+.learnings/meta_skill.json
+.learnings/evolution_state.json
+.learnings/distill_candidates.json
+.learnings/sleep_proposals/
+.learnings/tasks/
+.learnings/reflections/
+
+# 运行时生成的文档
+Spec.md
+Design.md
+Review.md
+verification-report.md
+
+# 知识库原始数据（本地备份，可重新下载）
+trae_kb_v48.md
+trae_kb_incremental.md
+
+# 凭证和密钥
+*.key
+*.pem
+*.secret
+credentials*
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.iml
