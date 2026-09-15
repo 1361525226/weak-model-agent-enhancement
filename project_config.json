@@ -1,0 +1,90 @@
+{
+  "project_name": "weak-model-agent-enhancement",
+  "version": "3.0.0",
+  "created_at": "2026-09-15",
+  "description": "弱模型Agent性能增强项目v3.0 — 7阶段工作流×Best-of-N×Token换性能×持续进化",
+  "workspace": {
+    "root": "E:/项目/Agnes提升计划",
+    "skills_dir": "E:/项目/Agnes提升计划/skills",
+    "loop_dir": "E:/项目/Agnes提升计划/.loop",
+    "learnings_dir": "E:/项目/Agnes提升计划/.learnings",
+    "patterns_dir": "E:/项目/Agnes提升计划/agens-agent-patterns/skills",
+    "knowledge_base_kb_id": "L3oKvpnu0uVfNeVrsfs0zQxKwDB9kDqnuozkXM44_y4="
+  },
+  "agents": {
+    "primary": "Agnes-2.5-Flash",
+    "platform": "Agnes Code",
+    "rpm_limit": 20,
+    "thinking_budget": 2048
+  },
+  "loop_config": {
+    "default_max_iterations": 5,
+    "gain_cost_optimal_r": 2,
+    "early_stop_threshold": 0.1,
+    "no_progress_limit": 2
+  },
+  "skill_evolution": {
+    "enabled": true,
+    "auto_evolve_after_failures": 3,
+    "g7_quality_gate": true,
+    "critic_external_validation": true,
+    "rejected_edits_buffer": ".learnings/rejected_edits.json"
+  },
+  "platform_selection": {
+    "code_editing": "Aider",
+    "workflow_orchestration": "LangGraph",
+    "swe_tasks": "OpenHands",
+    "multi_agent": "DeerFlow",
+    "general_fullstack": "Agnes Code"
+  },
+  "memory": {
+    "l1_capacity_chars": 2200,
+    "l1_warning_pct": 80,
+    "l1_critical_pct": 95,
+    "aging_threshold_days": 14,
+    "archive_threshold_days": 30
+  },
+  "workflow": {
+    "stages": [
+      "spec",
+      "design",
+      "implement",
+      "verify",
+      "review",
+      "reflect",
+      "release"
+    ],
+    "default_strategy": "auto",
+    "default_n_candidates": 3,
+    "best_of_n_enabled": true,
+    "tot_enabled": true,
+    "forest_enabled": true
+  },
+  "token_budget": {
+    "S": {
+      "thinking": 0,
+      "max_tokens": 1000,
+      "max_rounds": 1
+    },
+    "A": {
+      "thinking": 512,
+      "max_tokens": 3000,
+      "max_rounds": 3
+    },
+    "B": {
+      "thinking": 1024,
+      "max_tokens": 8000,
+      "max_rounds": 5
+    },
+    "C": {
+      "thinking": 2048,
+      "max_tokens": 20000,
+      "max_rounds": 8
+    },
+    "X": {
+      "thinking": 4096,
+      "max_tokens": 5000,
+      "max_rounds": 1
+    }
+  }
+}
