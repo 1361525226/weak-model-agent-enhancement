@@ -1,0 +1,3242 @@
+{
+  "generated_at": "2026-09-18T01:16:07.902979",
+  "threshold": 0.25,
+  "total_before": 494,
+  "total_after": 392,
+  "meta_domains": [
+    "记忆与状态",
+    "协作与编排",
+    "护栏与安全",
+    "上下文与检索",
+    "推理与提示进化",
+    "推理加速与部署",
+    "评测与观测",
+    "模型训练与蒸馏",
+    "模型路由与成本",
+    "研发流程",
+    "工具与技能生态",
+    "多模态与感知",
+    "专用领域"
+  ],
+  "meta_patterns": [
+    {
+      "domain": "记忆与状态",
+      "title": "Memory Optimization 综合模式",
+      "ids": [
+        "pattern_404"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "Flash Attention内存优化模式（Flash Attention Memory Optimization）",
+      "ids": [
+        "pattern_360",
+        "pattern_361",
+        "pattern_379"
+      ],
+      "member_count": 3
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "MemPalace 本地记忆宫殿模式",
+      "ids": [
+        "pattern_447"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "Cognee 知识图谱记忆模式",
+      "ids": [
+        "pattern_448",
+        "pattern_171",
+        "pattern_043",
+        "pattern_239"
+      ],
+      "member_count": 4
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "AI原生向量检索基础设施模式（Chroma）",
+      "ids": [
+        "pattern_136"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "访问频率驱动内存层级分层模式（Access-Frequency-Driven Memory Tiering）",
+      "ids": [
+        "pattern_303"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "Mem0 跨会话记忆集成模式",
+      "ids": [
+        "pattern_452",
+        "pattern_433"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "Agent记忆层次结构模式",
+      "ids": [
+        "pattern_445",
+        "pattern_026",
+        "pattern_358",
+        "pattern_391"
+      ],
+      "member_count": 4
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "记忆提取-更新-遗忘循环",
+      "ids": [
+        "pattern_237"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "OS风格虚拟上下文分页",
+      "ids": [
+        "pattern_238"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "多层次内存优化组合模式（Multi-Layer Memory Optimization）",
+      "ids": [
+        "pattern_309"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "四路信号记忆检索模式（Four-Signal Memory Retrieval）",
+      "ids": [
+        "pattern_042"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "KV缓存量化压缩模式（KV Cache Quantization）",
+      "ids": [
+        "pattern_345"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "边缘AI部署全栈模式",
+      "ids": [
+        "pattern_383"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "自编辑外置记忆模式（Self-Editing External Memory）",
+      "ids": [
+        "pattern_081",
+        "pattern_041",
+        "pattern_044"
+      ],
+      "member_count": 3
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "分层自管理记忆模式（Letta/MemGPT）",
+      "ids": [
+        "pattern_135"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "元设备零内存初始化",
+      "ids": [
+        "pattern_295"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "渐进式解压优化模式（Incremental Dequantization）",
+      "ids": [
+        "pattern_346"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "PLE逐层嵌入模式",
+      "ids": [
+        "pattern_363"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "记忆与状态",
+      "title": "参数存储解耦模式",
+      "ids": [
+        "pattern_288"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "Agent-Computer Interface设计",
+      "ids": [
+        "pattern_228"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "Durable Execution持久化执行模式（Durable Execution）",
+      "ids": [
+        "pattern_089"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "Supervisor-Worker双层分工模式（Supervisor-Worker Pattern）",
+      "ids": [
+        "pattern_090"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "Loop Engineering声明式循环",
+      "ids": [
+        "pattern_251"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "Agent Handoff优雅移交模式（Graceful Handoff）",
+      "ids": [
+        "pattern_091"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "StateGraph状态机编排模式（StateGraph Orchestration）",
+      "ids": [
+        "pattern_053"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "AI Agent设计原理书体系化",
+      "ids": [
+        "pattern_256",
+        "pattern_172",
+        "pattern_356",
+        "pattern_191",
+        "pattern_039",
+        "pattern_033",
+        "pattern_387",
+        "pattern_229"
+      ],
+      "member_count": 8
+    },
+    {
+      "domain": "协作与编排",
+      "title": "生产级声明式Agent编排模式（Microsoft Agent Framework）",
+      "ids": [
+        "pattern_195",
+        "pattern_221"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "协作与编排",
+      "title": "A2A协议跨Agent委派模式（Agent-to-Agent Protocol）",
+      "ids": [
+        "pattern_087",
+        "pattern_188"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "协作与编排",
+      "title": "MCP协议标准化工具接口模式",
+      "ids": [
+        "pattern_123",
+        "pattern_367"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "协作与编排",
+      "title": "可视化LLM应用编排平台模式（Dify）",
+      "ids": [
+        "pattern_141"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "可视化拖拽Agent构建模式（Flowise）",
+      "ids": [
+        "pattern_142"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "自然语言浏览器GUI代理模式（Page-Agent）",
+      "ids": [
+        "pattern_187"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "弱模型能力声明与任务匹配模式（Agent Card）",
+      "ids": [
+        "pattern_193"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "SDK优先Agent架构模式（SDK-First Agent Architecture）",
+      "ids": [
+        "pattern_031",
+        "pattern_050"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "协作与编排",
+      "title": "主模型+小模型分工架构模式（Planner-Grounder Split）",
+      "ids": [
+        "pattern_070"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "持久化状态图工作流编排模式（LangGraph）",
+      "ids": [
+        "pattern_140",
+        "pattern_083"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "协作与编排",
+      "title": "本地代码执行补偿推理模式（Open Interpreter）",
+      "ids": [
+        "pattern_124"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "预算求解配置驱动架构模式（Budget-Solving Config-Driven Architecture）",
+      "ids": [
+        "pattern_306"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "多智能体蜂群协作模式（ruflo）",
+      "ids": [
+        "pattern_185"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "MCP 调度恢复模式（MCP-Agent）",
+      "ids": [
+        "pattern_473"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "Rust推理引擎模式",
+      "ids": [
+        "pattern_371"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "多阶段AI工作流",
+      "ids": [
+        "pattern_300"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "极简核心循环模式（Minimal Core Loop）",
+      "ids": [
+        "pattern_061"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "系统架构设计模式",
+      "ids": [
+        "pattern_389"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "辩论式共识机制（Debate Consensus）",
+      "ids": [
+        "pattern_052"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "模式-工具白名单模式（Roo Code）",
+      "ids": [
+        "pattern_472"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "协作与编排",
+      "title": "子代理开发模式",
+      "ids": [
+        "pattern_002"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "Kill Switch与SLO监控模式（Kill Switch & SLO Monitoring）",
+      "ids": [
+        "pattern_059"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "Agent Compiler 综合模式",
+      "ids": [
+        "pattern_395",
+        "pattern_399",
+        "pattern_084",
+        "pattern_111",
+        "pattern_076",
+        "pattern_075"
+      ],
+      "member_count": 6
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "Agent社会规模模拟与涌现行为模式（CAMEL Society）",
+      "ids": [
+        "pattern_169"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "多Agent角色扮演辩论共识模式（CAMEL）",
+      "ids": [
+        "pattern_164"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "DAG并行函数调用编译器模式（LLMCompiler）",
+      "ids": [
+        "pattern_150"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "状态图Agent编排引擎模式（LangGraph）",
+      "ids": [
+        "pattern_177"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "轻量高性能Agent平台模式（agno）",
+      "ids": [
+        "pattern_178"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "Agent工作流模糊测试模式（agentic_security）",
+      "ids": [
+        "pattern_100"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "多维度代码漏洞LLM检测模式（Graphify+Strix）",
+      "ids": [
+        "pattern_192"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "搜索-变换-约束三段式流水线",
+      "ids": [
+        "pattern_224"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "Datasite隐私计算模式",
+      "ids": [
+        "pattern_227"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "结构化错误检测规则引擎模式（Template-Based Rule Matching）",
+      "ids": [
+        "pattern_320"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "金丝雀令牌提示注入检测模式（Canary Token Defense）",
+      "ids": [
+        "pattern_194"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "输入输出双向扫描矩阵模式（Bidirectional Scanner Matrix）",
+      "ids": [
+        "pattern_058"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "AI配对编程自主编辑模式（Aider）",
+      "ids": [
+        "pattern_112"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "先规划后执行提示策略模式（Plan-and-Solve）",
+      "ids": [
+        "pattern_152"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "LLM漏洞自动化扫描模式（NVIDIA garak）",
+      "ids": [
+        "pattern_099",
+        "pattern_279",
+        "pattern_280"
+      ],
+      "member_count": 3
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "配置即代码微调流水线模式（Axolotl）",
+      "ids": [
+        "pattern_148"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "AI驱动渗透测试安全模式（Strix）",
+      "ids": [
+        "pattern_186"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "推理与行动交替循环模式（ReAct）",
+      "ids": [
+        "pattern_151"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "无循环三阶段流水线模式（Agentless）",
+      "ids": [
+        "pattern_457"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "红队自动化测试框架模式（Microsoft PyRIT）",
+      "ids": [
+        "pattern_101"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "RL后训练全栈对齐模式（TRL）",
+      "ids": [
+        "pattern_147",
+        "pattern_078"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "系统提示词安全审计模式（System Prompts Leaks）",
+      "ids": [
+        "pattern_189"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "代码执行安全沙箱模式（E2B/CodeSandbox）",
+      "ids": [
+        "pattern_120"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "代码审计报告生成模式",
+      "ids": [
+        "pattern_281"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "隐私计算沙盒执行模式（Privacy-Preserving Sandbox Execution）",
+      "ids": [
+        "pattern_333"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "工具沙箱误用检测模式（ToolEmu）",
+      "ids": [
+        "pattern_471"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "确定性策略拦截模式（Deterministic Policy Interception）",
+      "ids": [
+        "pattern_057"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "宏命令回合压缩模式（Tura command_run）",
+      "ids": [
+        "pattern_454"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "双循环分层规划模式（XAgent plan-and-execute）",
+      "ids": [
+        "pattern_459"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "零代码对齐训练模式（Zero-Code Alignment）",
+      "ids": [
+        "pattern_077"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "插件化漏洞探测架构",
+      "ids": [
+        "pattern_222"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "点对点显式授权模式（Peer-to-Peer Explicit Authorization）",
+      "ids": [
+        "pattern_334"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "安全漂移检测模式（Safety Drift Detection）",
+      "ids": [
+        "pattern_030"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "红队安全测试模式（Red Team Security Testing）",
+      "ids": [
+        "pattern_097"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "渐进式对抗编排",
+      "ids": [
+        "pattern_223"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "边界守护模式（Boundary Guard Pattern）",
+      "ids": [
+        "pattern_331"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "护栏与安全",
+      "title": "护栏模式（Guardrails Pattern）",
+      "ids": [
+        "pattern_029"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "Hierarchical Context Encoding 模式",
+      "ids": [
+        "pattern_439",
+        "pattern_440"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "Streaming Context Processing 模式",
+      "ids": [
+        "pattern_438",
+        "pattern_437"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "StreamingLLM滑动窗口注意力模式",
+      "ids": [
+        "pattern_158",
+        "pattern_449"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "LLMLingua Prompt 压缩模式",
+      "ids": [
+        "pattern_432"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "LangChain 长上下文RAG增强模式",
+      "ids": [
+        "pattern_418",
+        "pattern_431",
+        "pattern_429",
+        "pattern_450",
+        "pattern_443",
+        "pattern_201",
+        "pattern_425"
+      ],
+      "member_count": 7
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "MInference 稀疏注意力模式",
+      "ids": [
+        "pattern_434",
+        "pattern_086",
+        "pattern_461",
+        "pattern_444"
+      ],
+      "member_count": 4
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "文档Agent与结构化RAG管线模式（LlamaIndex）",
+      "ids": [
+        "pattern_143",
+        "pattern_144"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "LLM友好型Web爬虫RAG增强模式（Crawl4AI）",
+      "ids": [
+        "pattern_163"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "LeanCTX 动态上下文模式",
+      "ids": [
+        "pattern_008"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "Agent运行时上下文压缩模式（Runtime Context Compaction）",
+      "ids": [
+        "pattern_045"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "仓库地图 token 预算模式（Aider repo-map）",
+      "ids": [
+        "pattern_456"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "RoPE位置编码外推扩展模式（YaRN）",
+      "ids": [
+        "pattern_149"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "RAG质量量化评估闭环模式（RAGAS）",
+      "ids": [
+        "pattern_145"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "上下文管理最佳实践模式",
+      "ids": [
+        "pattern_390"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "混合向量检索与量化模式（Qdrant）",
+      "ids": [
+        "pattern_174"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "上下文工程技能化模式（Context Engineering as Skill）",
+      "ids": [
+        "pattern_018"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "上下文纪律与重置模式（Context Discipline & Reset）",
+      "ids": [
+        "pattern_055"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "上下文沙箱路由模式（Context Sandbox Routing）",
+      "ids": [
+        "pattern_082"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "代码知识图谱模式（Code Knowledge Graph）",
+      "ids": [
+        "pattern_027"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "弱模型压缩器模式（LLMLingua perplexity pruning）",
+      "ids": [
+        "pattern_460"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "图谱RAG模式（Graph RAG）",
+      "ids": [
+        "pattern_080"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "上下文与检索",
+      "title": "共享语言模式（Shared Language / CONTEXT.md）",
+      "ids": [
+        "pattern_024"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "假设显式化+对抗式评审Prompt模式（Assumption Explicit + Adversarial Review）",
+      "ids": [
+        "pattern_324"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "任务感知Agent驱动提示优化模式（PromptWizard）",
+      "ids": [
+        "pattern_157"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "Suggested Action",
+      "ids": [],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "编程式推理增强与提示自优化模式（DSPy）",
+      "ids": [
+        "pattern_139"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "LLM评估与红队安全测试模式（Promptfoo）",
+      "ids": [
+        "pattern_156"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "MCTS+过程奖励推理模式（MCTS with Process Reward）",
+      "ids": [
+        "pattern_066"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "自进化Agent递归改进",
+      "ids": [
+        "pattern_255"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "反思式提示进化优化模式（DSPy GEPA）",
+      "ids": [
+        "pattern_167"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "思维森林并行推理模式（Forest of Thought）",
+      "ids": [
+        "pattern_073",
+        "pattern_064",
+        "pattern_455"
+      ],
+      "member_count": 3
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "逐层注入增强模式",
+      "ids": [
+        "pattern_289"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "阶梯决策算法模式（Ladder Decision Algorithm）",
+      "ids": [
+        "pattern_328"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "推理增强技术模式",
+      "ids": [
+        "pattern_392"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "自我改进代理模式（Self-Improving Agent）",
+      "ids": [
+        "pattern_009"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "推理链蒸馏模式（Reasoning Chain Distillation）",
+      "ids": [
+        "pattern_063"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "Summary",
+      "ids": [],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "Details",
+      "ids": [],
+      "member_count": 1
+    },
+    {
+      "domain": "推理与提示进化",
+      "title": "指令自进化模式（WizardLM Evol-Instruct）",
+      "ids": [
+        "pattern_462"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "Inference Optimization 综合模式",
+      "ids": [
+        "pattern_394",
+        "pattern_398"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "RadixAttention前缀缓存推理框架模式（SGLang）",
+      "ids": [
+        "pattern_161",
+        "pattern_405",
+        "pattern_406",
+        "pattern_408",
+        "pattern_234",
+        "pattern_105"
+      ],
+      "member_count": 6
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "Apple Silicon统一内存推理模式（MLX）",
+      "ids": [
+        "pattern_127"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "OpenTelemetry标准化LLM插桩",
+      "ids": [
+        "pattern_245"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "因果多头注意力+Dropout正则化模式（Causal Multi-Head Attention + Dropout）",
+      "ids": [
+        "pattern_314"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "Whisper.cpp 边缘语音识别模式",
+      "ids": [
+        "pattern_410"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "FlashInfer JIT编译优化模式",
+      "ids": [
+        "pattern_414",
+        "pattern_372"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "TensorRT-LLM 生产推理模式",
+      "ids": [
+        "pattern_409"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "DeepSeek小模型草稿投机采样模式（DeepSpec/DSpark）",
+      "ids": [
+        "pattern_168"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "Profile驱动渐进式分级优化模式（Profile-Driven Progressive Staged Optimization）",
+      "ids": [
+        "pattern_307"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "GGUF k-quants量化推理",
+      "ids": [
+        "pattern_235",
+        "pattern_349",
+        "pattern_292"
+      ],
+      "member_count": 3
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "FlashDecoding并行模式",
+      "ids": [
+        "pattern_378"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "脉冲驱动Transformer模式（Spike-Driven Transformer）",
+      "ids": [
+        "pattern_354"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "Rust本地优先个人AI大脑模式（openhuman）",
+      "ids": [
+        "pattern_180"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "多头并行token预测加速模式（Medusa）",
+      "ids": [
+        "pattern_160"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "纯C消费级超大模型推理模式（colibri）",
+      "ids": [
+        "pattern_181"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "消费者级GPU推理加速模式（Consumer GPU Inference）",
+      "ids": [
+        "pattern_347",
+        "pattern_282",
+        "pattern_302",
+        "pattern_370",
+        "pattern_420",
+        "pattern_421"
+      ],
+      "member_count": 6
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "Kernel级训练加速模式",
+      "ids": [
+        "pattern_375"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "GGUF标准化量化格式模式",
+      "ids": [
+        "pattern_381",
+        "pattern_092"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "4-bit量化微调底座模式（bitsandbytes）",
+      "ids": [
+        "pattern_182"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "ESP32分布式推理模式",
+      "ids": [
+        "pattern_411"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "结构化输出解析器强制模式（SGLang/vLLM）",
+      "ids": [
+        "pattern_170"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "权重幅度激活乘积剪枝模式（Wanda）",
+      "ids": [
+        "pattern_183"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "自回归草稿头投机解码模式（EAGLE）",
+      "ids": [
+        "pattern_159"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "嵌套Span调用链追踪",
+      "ids": [
+        "pattern_244"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "生产级推理服务部署模式（Production Inference Serving）",
+      "ids": [
+        "pattern_362",
+        "pattern_441"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "GPU外存推理优化模式",
+      "ids": [
+        "pattern_384",
+        "pattern_093",
+        "pattern_343",
+        "pattern_369"
+      ],
+      "member_count": 4
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "置信度路由混合推理模式（Cactus Hybrid）",
+      "ids": [
+        "pattern_458"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "Agent即优化器模式（Agent-as-Optimizer）",
+      "ids": [
+        "pattern_034"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "边缘-云协同推理模式",
+      "ids": [
+        "pattern_284",
+        "pattern_348"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "C++极致量化推理模式（llama.cpp）",
+      "ids": [
+        "pattern_125"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "一键模型部署网关模式（Ollama）",
+      "ids": [
+        "pattern_126"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "逐层流式推理策略模式（Layer-by-Layer Streaming Inference）",
+      "ids": [
+        "pattern_308"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "特征缓存复用加速模式（Feature Cache Reuse Acceleration）",
+      "ids": [
+        "pattern_342"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "脉冲神经网络框架模式（Spiking Neural Network Framework）",
+      "ids": [
+        "pattern_353",
+        "pattern_386"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "神经形态芯片部署模式（Neuromorphic Chip Deployment）",
+      "ids": [
+        "pattern_355"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "极简启动动态升级模式",
+      "ids": [
+        "pattern_257"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "激活感知权重量化模式（AutoAWQ）",
+      "ids": [
+        "pattern_176",
+        "pattern_310"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "NF4双重量化加载",
+      "ids": [
+        "pattern_236"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "模型压缩与蒸馏模式",
+      "ids": [
+        "pattern_283",
+        "pattern_341"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "多模型兼容加速模式（Multi-Model Compatible Acceleration）",
+      "ids": [
+        "pattern_344"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "流式全链路处理模式",
+      "ids": [
+        "pattern_365"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "推理模块自组合模式（Self-Discover）",
+      "ids": [
+        "pattern_475"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "手机端稀疏推理模式（Mobile Sparse Inference）",
+      "ids": [
+        "pattern_094"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "多模型输出融合模式（FuseLLM）",
+      "ids": [
+        "pattern_474"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "上下文预算释放模式（Context Budget via Weight Offloading）",
+      "ids": [
+        "pattern_311"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "难度路由级联模式（RouteLLM）",
+      "ids": [
+        "pattern_465"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "弱监督强泛化模式（weak-to-strong）",
+      "ids": [
+        "pattern_468"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "小模型大能力策略",
+      "ids": [
+        "pattern_232"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "单文件分发模式（Single-File Distribution）",
+      "ids": [
+        "pattern_096"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "提示词压缩模式（Prompt Compression）",
+      "ids": [
+        "pattern_046"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "渐进式优化阶梯",
+      "ids": [
+        "pattern_290"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "多级别强度模式（Intensity Grading Pattern）",
+      "ids": [
+        "pattern_329"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "选择性精度模式",
+      "ids": [
+        "pattern_296"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "稀疏按需加载",
+      "ids": [
+        "pattern_293"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "解码策略优化",
+      "ids": [
+        "pattern_299"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "语义缓存模式（Semantic Cache）",
+      "ids": [
+        "pattern_049"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "推理加速与部署",
+      "title": "预取流水线",
+      "ids": [
+        "pattern_294"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "Evaluation Benchmark 综合模式",
+      "ids": [
+        "pattern_397",
+        "pattern_400"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "评测与观测",
+      "title": "OpenTelemetry AI可观测模式（Arize Phoenix）",
+      "ids": [
+        "pattern_129"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "Observability 综合模式",
+      "ids": [
+        "pattern_401"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "全维度Agent能力评估基准模式（AgentBench）",
+      "ids": [
+        "pattern_202"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "弱模型输出质量自动评估与红队模式（promptfoo）",
+      "ids": [
+        "pattern_205"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "真实Web环境Agent评测模式（WebArena）",
+      "ids": [
+        "pattern_155"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "黄金验证与原子化安全失败模式（Host-Golden Verification & Atomic Safe Failure）",
+      "ids": [
+        "pattern_305"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "LLM全链路可观测追踪模式（Langfuse）",
+      "ids": [
+        "pattern_128",
+        "pattern_047"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "评测与观测",
+      "title": "代码生成质量多维评测模式（BigCodeBench）",
+      "ids": [
+        "pattern_122",
+        "pattern_119"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "评测与观测",
+      "title": "AI网关自动故障转移模式（Helicone）",
+      "ids": [
+        "pattern_130"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "防污染时间分段评测模式（Contamination-Free Temporal Evaluation）",
+      "ids": [
+        "pattern_069"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "多语言代码修复评测模式（Multi-SWE-bench）",
+      "ids": [
+        "pattern_118",
+        "pattern_116"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "评测与观测",
+      "title": "真实运行时编码评估模式（SWE-bench + ClawProBench）",
+      "ids": [
+        "pattern_216"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "隔离臂对照消融实验模式（Isolation-Arm Controlled Ablation）",
+      "ids": [
+        "pattern_304"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "实时编程竞赛评测模式（LiveCodeBench）",
+      "ids": [
+        "pattern_117"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "多维质量评估指标模式（F1/Precision/Recall/Time/Token）",
+      "ids": [
+        "pattern_319"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "机制可解释性诊断模式（Mechanistic Interpretability）",
+      "ids": [
+        "pattern_085"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "覆盖率引导模糊测试",
+      "ids": [
+        "pattern_240"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "系统性变异测试验证",
+      "ids": [
+        "pattern_241"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "弱模型诊断七维分析",
+      "ids": [
+        "pattern_301"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "独立评估器外置模式（External Independent Evaluator）",
+      "ids": [
+        "pattern_056"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "动态基准评估模式（Dynamic Benchmark Evaluation）",
+      "ids": [
+        "pattern_038"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "评测幻觉消除模式（Evaluation Hallucination Elimination）",
+      "ids": [
+        "pattern_068"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "幻觉量化检测模式（Hallucination Quantification）",
+      "ids": [
+        "pattern_079"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "测试生成闭环模式（qodo-cover verification-driven）",
+      "ids": [
+        "pattern_466"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "本地轻量评测模式（simple-evals）",
+      "ids": [
+        "pattern_476"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "质疑驱动开发模式（Doubt-Driven Development）",
+      "ids": [
+        "pattern_017"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "完成定义清单模式（Definition of Done Checklist）",
+      "ids": [
+        "pattern_022"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "质量门禁系统模式（Quality Gate System）",
+      "ids": [
+        "pattern_032"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "统一评估接口",
+      "ids": [
+        "pattern_233"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "评测与观测",
+      "title": "带宽地板分析",
+      "ids": [
+        "pattern_291"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "Model Finetuning 综合模式",
+      "ids": [
+        "pattern_402"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "Task-Specific 知识蒸馏模式",
+      "ids": [
+        "pattern_007"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "OSS-Instruct训练数据增强模式（Magicoder）",
+      "ids": [
+        "pattern_131"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "LLaMA-Factory 统一微调模式",
+      "ids": [
+        "pattern_412"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "声明式Pipeline DSL调度",
+      "ids": [
+        "pattern_226"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "2倍速微调+GRPO强化学习模式（Unsloth）",
+      "ids": [
+        "pattern_134"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "Axolotl 配置驱动微调模式",
+      "ids": [
+        "pattern_413"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "QLoRA低成本微调增强模式（QLoRA Fine-tuning Enhancement）",
+      "ids": [
+        "pattern_095",
+        "pattern_204",
+        "pattern_316",
+        "pattern_298"
+      ],
+      "member_count": 4
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "Strategy模式联邦聚合",
+      "ids": [
+        "pattern_225"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "Unsloth 快速微调模式",
+      "ids": [
+        "pattern_407"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "统一高效微调蒸馏流水线模式（LLaMA-Factory）",
+      "ids": [
+        "pattern_162",
+        "pattern_133"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "ZeRO零冗余优化器模式（Microsoft DeepSpeed）",
+      "ids": [
+        "pattern_106"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "流水线并行大模型训练模式（NVIDIA Megatron-LM）",
+      "ids": [
+        "pattern_110"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "异构分布式并行训练模式（ColossalAI）",
+      "ids": [
+        "pattern_107"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "神经网络结构搜索模式（Neural Architecture Search NAS）",
+      "ids": [
+        "pattern_340"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "数据管道背压控制模式",
+      "ids": [
+        "pattern_274",
+        "pattern_275"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "GPT模块化架构模式（LayerNorm + GELU + Residual Connection）",
+      "ids": [
+        "pattern_317"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "联邦学习策略抽象模式（Federated Learning Strategy Abstraction）",
+      "ids": [
+        "pattern_336"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "合成数据蒸馏增强模式（Synthetic Data Distillation）",
+      "ids": [
+        "pattern_098",
+        "pattern_184"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "训练稳定化三件套模式（Warmup + Cosine Decay + Gradient Clipping）",
+      "ids": [
+        "pattern_313",
+        "pattern_297"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "超参数自动搜索模式（Hyperparameter Auto-Tuning）",
+      "ids": [
+        "pattern_339"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "偏好学习算法栈模式",
+      "ids": [
+        "pattern_376"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "流式批处理混合模式",
+      "ids": [
+        "pattern_273"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "框架无关客户端模式（Framework-Agnostic Client Pattern）",
+      "ids": [
+        "pattern_337"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型训练与蒸馏",
+      "title": "模型微调与量化模式",
+      "ids": [
+        "pattern_393"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "AutoModel工厂防御式路由模式（AutoModel Factory + Defensive Orchestration）",
+      "ids": [
+        "pattern_312"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "动态CPU-GPU分层调度模式",
+      "ids": [
+        "pattern_368"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "查询复杂度动态模型路由模式（RouteLLM）",
+      "ids": [
+        "pattern_198",
+        "pattern_048"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "多服务商统一路由网关模式（OmniRoute）",
+      "ids": [
+        "pattern_179"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "Topic路由架构模式",
+      "ids": [
+        "pattern_015"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "统一LLM网关代理模式（LiteLLM）",
+      "ids": [
+        "pattern_108"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "多供应商LLM抽象模式（Multi-Provider LLM Abstraction）",
+      "ids": [
+        "pattern_322"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "模型路由聚合平台模式（OpenRouter）",
+      "ids": [
+        "pattern_109"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "本地模型一键运行模式（One-Click Local LLM）",
+      "ids": [
+        "pattern_351"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "多推理后端抽象模式",
+      "ids": [
+        "pattern_374"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "模型路由与成本",
+      "title": "连续批处理调度模式",
+      "ids": [
+        "pattern_380"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Code Understanding 综合模式",
+      "ids": [
+        "pattern_396"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Readability & Simplicity",
+      "ids": [],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Code-Intelligence 综合模式",
+      "ids": [
+        "pattern_403"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Tree-sitter AST代码图谱构建",
+      "ids": [
+        "pattern_246",
+        "pattern_175"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "研发流程",
+      "title": "SEARCH/REPLACE编辑协议模式（Aider）",
+      "ids": [
+        "pattern_214"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "TDD红绿重构循环+垂直切片增量实现模式（Red-Green-Refactor + Vertical Slicing）",
+      "ids": [
+        "pattern_325",
+        "pattern_020"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "研发流程",
+      "title": "Anthropic官方文档处理四件套模式",
+      "ids": [
+        "pattern_016"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "OpenHands 自修复代码循环模式",
+      "ids": [
+        "pattern_451",
+        "pattern_436",
+        "pattern_423"
+      ],
+      "member_count": 3
+    },
+    {
+      "domain": "研发流程",
+      "title": "Git Worktree 隔离模式",
+      "ids": [
+        "pattern_003"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "强类型校验Agent输出约束模式（PydanticAI）",
+      "ids": [
+        "pattern_196",
+        "pattern_357"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "研发流程",
+      "title": "五轴代码评审+严重度分级标签模式（Five-Axis Review + Severity Grading）",
+      "ids": [
+        "pattern_326"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "代码库全文索引与符号交叉引用模式（OpenGrok）",
+      "ids": [
+        "pattern_146"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "React最佳实践分级规则模式",
+      "ids": [
+        "pattern_011"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "代码知识图谱Token节省模式（codebase-memory-mcp）",
+      "ids": [
+        "pattern_173",
+        "pattern_113"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "研发流程",
+      "title": "AST遍历逐函数LLM文档生成",
+      "ids": [
+        "pattern_243"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Rust极速代码自检自修模式（Ruff）",
+      "ids": [
+        "pattern_137"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Rust隐私优先编码工具模式",
+      "ids": [
+        "pattern_219"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Leiden社区检测代码聚类",
+      "ids": [
+        "pattern_249"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "编辑-测试-提交原子闭环模式（Edit-Test-Commit Atomic Loop）",
+      "ids": [
+        "pattern_062"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "可视化AI工作流编排平台模式（Langflow）",
+      "ids": [
+        "pattern_165",
+        "pattern_321"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "研发流程",
+      "title": "AI Agent友好文档模式",
+      "ids": [
+        "pattern_377",
+        "pattern_359"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "研发流程",
+      "title": "多语言安全静态分析护栏模式（Semgrep）",
+      "ids": [
+        "pattern_138"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "多规格代码生成基座模型模式（StarCoder2）",
+      "ids": [
+        "pattern_153"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "MoE高效代码生成路由模式（DeepSeek-Coder）",
+      "ids": [
+        "pattern_154"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "深度IDE集成编码代理模式（Cline）",
+      "ids": [
+        "pattern_210",
+        "pattern_213"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "研发流程",
+      "title": "项目上下文感知代码生成模式（Continue）",
+      "ids": [
+        "pattern_211"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "SHA-256增量图谱更新",
+      "ids": [
+        "pattern_248"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "代码库结构分析驱动文档生成",
+      "ids": [
+        "pattern_242"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "统一YAML配置流水线模式",
+      "ids": [
+        "pattern_373"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "50+格式文档语义分块模式（Unstructured）",
+      "ids": [
+        "pattern_200"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Day-0模型支持策略模式",
+      "ids": [
+        "pattern_382"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "代码仓库AI友好打包模式（Repomix）",
+      "ids": [
+        "pattern_197"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Architecture",
+      "ids": [],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "代码库持久化记忆图谱模式（codebase-memory-mcp）",
+      "ids": [
+        "pattern_207"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "开源AI编码平台架构模式（OpenHands）",
+      "ids": [
+        "pattern_209"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "目标到DAG自动分解模式（Goal-to-DAG Auto-Decomposition）",
+      "ids": [
+        "pattern_054"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "技能驱动的代码审查模式（GitHub Copilot Code Review）",
+      "ids": [
+        "pattern_212",
+        "pattern_208",
+        "pattern_021",
+        "pattern_254"
+      ],
+      "member_count": 4
+    },
+    {
+      "domain": "研发流程",
+      "title": "Correctness",
+      "ids": [],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Performance",
+      "ids": [],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "增量解析代码AST模式（tree-sitter）",
+      "ids": [
+        "pattern_114"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "代码语义表征预训练模式（GraphCodeBERT/CodeT5+）",
+      "ids": [
+        "pattern_115"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "持续代码上下文学习模式（ContinueDev）",
+      "ids": [
+        "pattern_121"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "AIDA 内容结构模式",
+      "ids": [
+        "pattern_005"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "头脑风暴式需求探索模式（Brainstorming）",
+      "ids": [
+        "pattern_012"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "开发工作流最佳实践模式",
+      "ids": [
+        "pattern_388"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "外部模型交叉校准模式（Cross-Model Calibration）",
+      "ids": [
+        "pattern_483"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "错误自修正三段式模式（Self-Reflect → Critic → Tool Feedback）",
+      "ids": [
+        "pattern_028"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "语言反思自我纠错模式（Verbal Reflexion）",
+      "ids": [
+        "pattern_065"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "结构化工程工作流模式（superpowers 140K+）",
+      "ids": [
+        "pattern_217",
+        "pattern_001",
+        "pattern_470",
+        "pattern_051"
+      ],
+      "member_count": 4
+    },
+    {
+      "domain": "研发流程",
+      "title": "生命周期钩子注入模式（Hook Lifecycle Injection）",
+      "ids": [
+        "pattern_330"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "自包含LLM打包模式（Self-Contained LLM Packaging）",
+      "ids": [
+        "pattern_350"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "NVS持久化配置模式",
+      "ids": [
+        "pattern_364"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "AP模式热点配网模式",
+      "ids": [
+        "pattern_366"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "四段式题解结构模式（Four-Section Solution Structure）",
+      "ids": [
+        "pattern_482"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "相似题类比迁移模式（Similar-Problem Analogy）",
+      "ids": [
+        "pattern_484"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "六级严重度标记系统",
+      "ids": [
+        "pattern_004"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "自托管代码补全模式（Tabby）",
+      "ids": [
+        "pattern_215"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "零训练自我精炼模式（Zero-Training Self-Refine）",
+      "ids": [
+        "pattern_067"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "执行反馈自调试模式（SELF-DEBUGGING）",
+      "ids": [
+        "pattern_467"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "文件持久化规划模式（Planning with Files）",
+      "ids": [
+        "pattern_010"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "小模型高效训练模式（Tiny Model Efficient Training）",
+      "ids": [
+        "pattern_352"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "微调训练全流程模式",
+      "ids": [
+        "pattern_385"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "结构化输出强制模式（Structured Output Enforcement）",
+      "ids": [
+        "pattern_036"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "Security",
+      "ids": [],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "代码图谱智能模式（函数调用链+数据流+类型依赖）",
+      "ids": [
+        "pattern_220"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "三级边置信度评分",
+      "ids": [
+        "pattern_250"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "微虚拟机沙箱模式（Micro-VM Sandboxing）",
+      "ids": [
+        "pattern_035"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "规格驱动开发模式（Spec-Driven Development）",
+      "ids": [
+        "pattern_019"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "混合架构模式（Deterministic Engineering + Agent Hybrid）",
+      "ids": [
+        "pattern_318"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "影响半径分析(Blast-Radius)",
+      "ids": [
+        "pattern_247"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "根因修复模式（Root Cause Fix Pattern）",
+      "ids": [
+        "pattern_332"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "需求审讯模式（Grilling/Interview Pattern）",
+      "ids": [
+        "pattern_023"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "研发流程",
+      "title": "探路者模式（Wayfinder / Multi-Session Planning）",
+      "ids": [
+        "pattern_025"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "纯Markdown Skill跨平台通用模式（Pure Markdown + Cross-Platform Distribution）",
+      "ids": [
+        "pattern_327"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "滑动窗口数据加载+BPE分词模式（Sliding Window + BPE Tokenization）",
+      "ids": [
+        "pattern_315"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "Skill数量控制与精准路由模式",
+      "ids": [
+        "pattern_014"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "浏览器自动化Agent蒸馏模式（Browser Use）",
+      "ids": [
+        "pattern_166"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "分层生命周期Skill架构模式（Define→Plan→Build→Verify→Review→Ship）",
+      "ids": [
+        "pattern_323"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "网页转LLM就绪数据管道模式（Firecrawl）",
+      "ids": [
+        "pattern_199"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "统一AI服务接口模型路由模式（aisuite）",
+      "ids": [
+        "pattern_190"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "LLM函数调用评测与优化模式（Gorilla/BFCL）",
+      "ids": [
+        "pattern_132"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "MCP 服务器分类目录模式",
+      "ids": [
+        "pattern_006"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "Harness工程化模式（Harness Engineering）",
+      "ids": [
+        "pattern_040"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "MCP协议标准化工具集成",
+      "ids": [
+        "pattern_252"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "MCP生态工具复用模式（MCP Tool Reuse）",
+      "ids": [
+        "pattern_088"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "代码执行即超级工具模式（Code Execution as Super Tool）",
+      "ids": [
+        "pattern_072"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "合成数据蒸馏增强模式（Synthetic Data Distillation）",
+      "ids": [
+        "pattern_074"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "工具调用重试回灌模式（pydantic-ai tool_retry）",
+      "ids": [
+        "pattern_463"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "数据集模拟分离模式（Mock/Private Dataset Separation）",
+      "ids": [
+        "pattern_335"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "技能库复利效应模式（Skill Library Compound Effect）",
+      "ids": [
+        "pattern_060"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "四层AI工程体系（Prompt→Context→Harness→Loop）",
+      "ids": [
+        "pattern_013"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "蒸馏数据管线模式（Distilabel）",
+      "ids": [
+        "pattern_469"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "技能路由架构模式（RULES.md + master-route）",
+      "ids": [
+        "pattern_218"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "URL即MCP(GitMCP模式)",
+      "ids": [
+        "pattern_253"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "基准复现模式（Baseline Reproduction Pattern）",
+      "ids": [
+        "pattern_338"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "Step 1: ...",
+      "ids": [],
+      "member_count": 2
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "约束解码模式（outlines constrained decoding）",
+      "ids": [
+        "pattern_464"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "工具与技能生态",
+      "title": "图工程模式（Graph Engineering）",
+      "ids": [
+        "pattern_037"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "Speech-to-Speech 低延迟语音Agent模式",
+      "ids": [
+        "pattern_417"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "OpenFlamingo 跨模态少样本学习模式",
+      "ids": [
+        "pattern_416"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "BLIP-2 冻结编码器引导预训练模式",
+      "ids": [
+        "pattern_427"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "Qwen3-VL 多模态 Agent 模式",
+      "ids": [
+        "pattern_446"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "CLHF自学习对话Agent模式（CopilotKit）",
+      "ids": [
+        "pattern_203"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "CLIP 视觉-语言对比编码模式",
+      "ids": [
+        "pattern_426"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "Qwen 多模态与长上下文模式",
+      "ids": [
+        "pattern_419"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "LLaVA 视觉指令微调模式",
+      "ids": [
+        "pattern_415",
+        "pattern_435"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "弱模型多轮对话状态管理模式（Shared State Architecture）",
+      "ids": [
+        "pattern_206"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "自适应Token剪枝模式",
+      "ids": [
+        "pattern_271"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "图文对齐零样本推理模式",
+      "ids": [
+        "pattern_430"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "原生多模态深度融合模式（Qwen3-VL/InternVL3.5）",
+      "ids": [
+        "pattern_104",
+        "pattern_424",
+        "pattern_442"
+      ],
+      "member_count": 3
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "多模态推理精度优化模式",
+      "ids": [
+        "pattern_453"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "视觉语言投影桥接模式",
+      "ids": [
+        "pattern_270",
+        "pattern_103"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "渐进式跨模态训练课程",
+      "ids": [
+        "pattern_272"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "模型可解释性分析模式",
+      "ids": [
+        "pattern_285"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "LIME局部解释模式",
+      "ids": [
+        "pattern_286"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "反事实解释生成模式",
+      "ids": [
+        "pattern_287"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "多模态视觉理解模式",
+      "ids": [
+        "pattern_422"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "跨模态对比学习模式",
+      "ids": [
+        "pattern_428"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "端侧全能多模态模式（OpenBMB MiniCPM-o）",
+      "ids": [
+        "pattern_102"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "声明式LM编程模式",
+      "ids": [
+        "pattern_267"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "反思式提示进化模式",
+      "ids": [
+        "pattern_268"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "计算约束自精炼模式",
+      "ids": [
+        "pattern_269"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "流处理窗口聚合模式",
+      "ids": [
+        "pattern_277"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "流式ETL管道模式",
+      "ids": [
+        "pattern_278"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "视觉外挂解析模式（Visual External Parser）",
+      "ids": [
+        "pattern_071"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "跨模态连接器设计",
+      "ids": [
+        "pattern_230"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "高分辨率输入增强",
+      "ids": [
+        "pattern_231"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "多模态与感知",
+      "title": "事件驱动架构模式",
+      "ids": [
+        "pattern_276"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "AI Agent区块链桥接模式",
+      "ids": [
+        "pattern_261",
+        "pattern_262"
+      ],
+      "member_count": 2
+    },
+    {
+      "domain": "专用领域",
+      "title": "具身AI感知-行动闭环模式",
+      "ids": [
+        "pattern_264"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "量子-经典混合架构模式",
+      "ids": [
+        "pattern_260"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "智能合约AI审计模式",
+      "ids": [
+        "pattern_263"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "量子可微分编程模式",
+      "ids": [
+        "pattern_258"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "统一多模态编码模式",
+      "ids": [
+        "pattern_265"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "算法框架先行模式（Framework-First Algorithm）",
+      "ids": [
+        "pattern_477"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "测试用例内嵌模式（Doctest-Embedded Algorithm）",
+      "ids": [
+        "pattern_478"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "复杂度先申报模式（Complexity-First Declaration）",
+      "ids": [
+        "pattern_479"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "退化输入清单模式（Degenerate-Input Checklist）",
+      "ids": [
+        "pattern_480"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "中文竞赛模板模式（OI-Wiki Template Retrieval）",
+      "ids": [
+        "pattern_481"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "量子核方法模式",
+      "ids": [
+        "pattern_259"
+      ],
+      "member_count": 1
+    },
+    {
+      "domain": "专用领域",
+      "title": "视觉推理链模式",
+      "ids": [
+        "pattern_266"
+      ],
+      "member_count": 1
+    }
+  ]
+}
