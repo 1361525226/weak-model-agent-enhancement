@@ -1,7 +1,8 @@
 # AGENTS.md — Agnes Code 编码规则（完整版）
 
 > 本文件位于项目根目录，自动加载。修改后立即生效，无需重启。
-> 版本：v3.0 | 核心目标：通过工程化手段增强弱模型在Agent驱动下的表现性能
+> 版本：v3.8 | 核心目标：通过工程化手段增强弱模型在Agent驱动下的表现性能
+> 交叉进化来源：GenericAgent(14K⭐) + OpenViking(38K⭐) + EverOS(13K⭐)
 
 ---
 
@@ -29,7 +30,11 @@ head -c 4000 "$FILE_PATH"    # 保留头部
 tail -c 4000 "$FILE_PATH"    # 保留尾部
 ```
 
-### 2.3 会话隔离
+### 2.3 三级上下文加载（OpenViking 模式）
+- **HOT tier**（热）：当前任务直接相关文件，已加载到上下文窗口
+- **WARM tier**（温）：最近 N 个任务的相关文件，缓存中
+- **COLD tier**（冷）：全量项目文件索引，按需加载
+- 原则：优先注入 HOT tier，避免无关历史占用上下文
 - 新任务使用 `/new` 开启
 - 长会话（>20轮）使用 `/compact`
 - 完成一个原子任务后手动 `/compact`
@@ -40,6 +45,11 @@ tail -c 4000 "$FILE_PATH"    # 保留尾部
 2. **文件**：完整路径
 3. **期望**：输出格式
 4. **验收条件**：可执行命令
+
+### 2.5 SOP 结晶原则（GenericAgent 模式）
+- 重复任务 ≥3 次 → 自动提炼为标准操作程序（SOP）
+- SOP 写入对应 Skill 的 `patterns/` 子目录
+- 新任务执行前先检查是否已有匹配 SOP
 
 ---
 
@@ -199,22 +209,27 @@ BLOCKED：format_disk, wipe_data → 直接拒绝
 ### 8.3 Skill 迭代
 高频失败模式 → 抽象为 Skill → 写入 `~/.zcode/skills/<category>/SKILL.md`
 
+### 8.4 离线记忆反思（EverOS 模式）
+- 任务完成后：自动触发 `offline_reflection()`
+- 合并相似 episode → 提炼共性 → 更新 Skill 规则
+- 压缩旧会话历史，维持上下文窗口最优
+
 ---
 
 ## 九、技能清单
 
 | Skill | 用途 | 触发条件 |
 |-------|------|---------|
-| loop-engineering | 循环设计+执行 | /loop, /goal |
-| 闭环自进化学习 | L1-L5记忆+Skill进化 | 每次任务后 |
+| loop-engineering | 循环设计+执行+SOP结晶 | /loop, /goal |
+| 闭环自进化学习 | L1-L5记忆+Skill进化+离线反思 | 每次任务后 |
 | open-code-review-delegate | 代码审查 | /open-code-review-delegate |
-| context-engineering | 上下文投影 | 大文件/多文件任务 |
-| harness-guardrails | 输入输出护栏 | 安全敏感操作 |
-| debugging | Reflexion+修复 | bug/错误 |
+| context-engineering | 三级上下文加载 | 大文件/多文件任务 |
+| harness-guardrails | 输入输出护栏+AgentDoG诊断 | 安全敏感操作 |
+| debugging | Reflexion+Error Depth分析 | bug/错误 |
 | code-review | 七维审查 | 提交前 |
-| memory-system | 三层记忆架构 | 跨会话任务 |
+| memory-system | 正交检索+记忆压缩 | 跨会话任务 |
 | multi-agent | Supervisor-Worker | 复杂分工任务 |
-| skill-evolution | Skill自动进化 | 失败≥3次 |
+| skill-evolution | SOP结晶+Skill自动进化 | 失败≥3次 |
 | fullstack-dev | 全栈最佳实践 | 前后端开发 |
 
 ---
@@ -240,6 +255,7 @@ BLOCKED：format_disk, wipe_data → 直接拒绝
 - [ ] Best-of-N 采样完成
 - [ ] 四维诊断信号正常
 - [ ] 早停条件未触发
+- [ ] SOP结晶检查（重复任务是否已提炼）
 
 ### 审查阶段
 - [ ] Critic Agent 复审完成
@@ -250,6 +266,7 @@ BLOCKED：format_disk, wipe_data → 直接拒绝
 - [ ] 失败模式写入 ERRORS.md
 - [ ] 成功模式写入 SUCCESS_PATTERNS.md
 - [ ] Skill 库已检查是否需要更新
+- [ ] 离线记忆反思执行
 
 ### 发布阶段
 - [ ] 小范围验证通过

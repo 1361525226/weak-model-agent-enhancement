@@ -12564,3 +12564,29 @@ class VisualReasoningChain:
                 break
         return context['action']
 ```
+
+
+---
+
+## 交叉进化模式（v3.8 新增）
+
+> 来源：GitHub 自进化项目分析 + arXiv 论文蒸馏
+> 整合时间：2026-09-20
+
+### 新模式概览
+
+| ID | 模式名称 | 来源 | 域 | Stars |
+|----|---------|------|-----|-------|
+| cross_001 | Perceive-Reason-Execute-Memory Loop | GenericAgent | loop_engineering | 14K⭐ |
+| cross_002 | Three-Tier Virtual Filesystem | OpenViking | context_management | 38K⭐ |
+| cross_003 | Offline Memory Reflection | EverOS | memory_system | 13K⭐ |
+| cross_004 | SOP Crystallization | GenericAgent | skill_evolution | 14K⭐ |
+| cross_005 | Orthogonal Retrieval | EverOS | context_management | 13K⭐ |
+| cross_006 | AgentDoG Diagnostic Framework | elephant-agent/SE-Agent | harness | 585⭐ |
+
+### 关键洞察
+
+1. **GenericAgent**: 100行循环实现自进化——感知→推理→执行→写记忆，任务沉淀为SOP
+2. **OpenViking**: 三级上下文加载（冷/温/热）+ 虚拟文件系统
+3. **EverOS**: 离线记忆反思 + 正交检索（用户×代理×项目维度）
+4. **SOP Crystallization**: 重复任务自动结晶为标准操作程序

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cross_001",
+    "name": "Perceive-Reason-Execute-Memory Loop",
+    "source": "GenericAgent (lsdefine/GenericAgent, 14K⭐)",
+    "domain": "loop_engineering",
+    "description": "100-line self-evolving loop: Perceive → reason → execute → write memory. Tasks crystallize into reusable SOPs building personal skill tree.",
+    "code": "# GenericAgent-style self-evolution loop\nwhile not converged:\n    state = perceive(current_state)       # 感知当前状态\n    plan = reason(state, memory)          # 推理+规划\n    result = execute(plan)                # 执行\n    memory.write(f\"Task crystallized into SOP: {plan.sop_id}\")  # 写入记忆\n    # Task → SOP 转化是关键：重复任务自动沉淀为可复用技能\n"
+  },
+  {
+    "id": "cross_002",
+    "name": "Three-Tier Virtual Filesystem",
+    "source": "OpenViking (volcengine/OpenViking, 38K⭐)",
+    "domain": "context_management",
+    "description": "Virtual filesystem where agents operate like files. Three loading tiers: cold (disk) → warm (cache) → hot (RAM). Sessions become memories via background extraction.",
+    "code": "# OpenViking-style 3-tier context loading\nTIER_COLD = '/sessions/'   # disk: full session history\nTIER_WARM = '/memory_cache/'  # RAM cache: last N sessions\nTIER_HOT = '/active_context/'  # loaded: current task context\n\ndef load_context(task):\n    # 1. Check hot tier first\n    if task.id in TIER_HOT:\n        return TIER_HOT[task.id]\n    # 2. Try warm tier\n    if task.id in TIER_WARM:\n        data = TIER_WARM[task.id]\n        TIER_HOT[task.id] = data  # Promote to hot\n        return data\n    # 3. Load from cold (disk) and promote\n    data = read_from_disk(TIER_COLD + task.id)\n    TIER_WARM[task.id] = data\n    TIER_HOT[task.id] = data\n    return data\n"
+  },
+  {
+    "id": "cross_003",
+    "name": "Offline Memory Reflection",
+    "source": "EverOS (EverMind-AI/EverOS, 13K⭐)",
+    "domain": "memory_system",
+    "description": "Between sessions, merge episode clusters and refine profiles. Local-first, Markdown-native, Git-versioned. Source files are readable and diffable.",
+    "code": "# EverOS-style offline reflection\ndef offline_reflection(sessions):\n    # 1. Merge similar episodes\n    clusters = merge_episodes(sessions, similarity_threshold=0.7)\n    # 2. Refine user/profile from clusters\n    for cluster in clusters:\n        profile = refine_profile(cluster)\n        save_profile(profile)\n    # 3. Compress old sessions to maintain context window\n    compress_old_sessions(cutoff_days=7)\n    # Key insight: reflection happens OFFLINE, not during task execution\n"
+  },
+  {
+    "id": "cross_004",
+    "name": "SOP Crystallization",
+    "source": "GenericAgent (lsdefine/GenericAgent, 14K⭐)",
+    "domain": "skill_evolution",
+    "description": "Repeated tasks automatically crystallize into Standard Operating Procedures (SOPs). Seed skill tree starts at 3.3K lines, grows autonomously.",
+    "code": "# SOP crystallization from repeated tasks\nSOP_THRESHOLD = 3  # repeat N times → crystallize\n\ndef crystallize_sop(task_history):\n    if task_history.count(task_type) >= SOP_THRESHOLD:\n        sop = extract_pattern(task_history)\n        sop.validate()\n        skill_registry.register(sop.name, sop)\n        # Update task description to reference new SOP\n        return f\"Crystallized into SOP: {sop.name}\"\n    return None\n"
+  },
+  {
+    "id": "cross_005",
+    "name": "Orthogonal Retrieval",
+    "source": "EverOS (EverMind-AI/EverOS, 13K⭐)",
+    "domain": "context_management",
+    "description": "Retrieval across orthogonal dimensions: user_id × agent_id × project_id. Enables cross-session memory sharing while maintaining isolation.",
+    "code": "# Orthogonal multi-dimensional retrieval\ndef retrieve(query, dimensions=['user', 'agent', 'project']):\n    results = {}\n    for dim in dimensions:\n        dim_results = search(index[dim], query, id=user_id if dim=='user' else None)\n        results[dim] = dim_results\n    # Merge with weighting\n    return merge_results(results, weights={'user': 0.5, 'agent': 0.3, 'project': 0.2})\n"
+  },
+  {
+    "id": "cross_006",
+    "name": "AgentDoG Diagnostic Framework",
+    "source": "agentic-in/elephant-agent + JARVIS-Xs/SE-Agent",
+    "domain": "harness",
+    "description": "Diagnostic framework for agent health: trajectory analysis, skill usage patterns, error depth analysis. Integrates with harness-guardrails.",
+    "code": "# AgentDoG diagnostic report\ndef agent_dog_report(agent_trace):\n    return {\n        'diagnostic_date': datetime.now().isoformat(),\n        'trajectory_summary': summarize_trajectory(agent_trace),\n        'skill_usage': {\n            'total_calls': len(agent_trace.tool_calls),\n            'underutilized': find_underused_skills(agent_trace),\n            'overused': find_overused_skills(agent_trace),\n        },\n        'error_depth': analyze_error_depth(agent_trace),  # How deep do errors go?\n        'convergence_signal': detect_convergence(agent_trace),\n        'recommendations': generate_recommendations(agent_trace),\n    }\n"
+  }
+]
