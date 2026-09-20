@@ -129,3 +129,52 @@ def guarded_execute(agent_fn, input_data, max_retries=3):
 - 护栏误拦 → 放宽条件或添加白名单
 - 护栏漏过 → 追加更严格的 guard
 - 重试耗尽 → 升级到人（单向门）
+
+---
+
+## 交叉进化增强（v3.8）
+
+### AgentDoG 诊断报告格式
+参照 [elephant-agent](https://github.com/agentic-in/elephant-agent) + [SE-Agent](https://github.com/JARVIS-Xs/SE-Agent) 的诊断框架，每次安全敏感操作后生成诊断报告：
+
+```json
+{
+  "diagnostic_date": "2026-09-20T20:30:00",
+  "trajectory_summary": {
+    "total_steps": 12,
+    "successful": 10,
+    "failed": 2,
+    "failure_types": ["TypeError", "PermissionError"]
+  },
+  "skill_usage": {
+    "total_calls": 45,
+    "underutilized": ["context-engineering"],
+    "overused": ["read_file"]
+  },
+  "error_depth": {
+    "max_depth": 3,
+    "deepest_error": "ImportError in module_x.py:42",
+    "root_cause": "Missing dependency: package_y"
+  },
+  "convergence_signal": "progressing",
+  "recommendations": [
+    "增加 context-engineering 使用频率",
+    "减少 read_file 重复调用"
+  ]
+}
+```
+
+### Error Depth 分析
+分析错误深度——错误发生在哪一层、根因是什么：
+
+```python
+def analyze_error_depth(trace):
+    errors = [e for e in trace if e.get('type') == 'error']
+    if not errors:
+        return {'depth': 0, 'root_cause': None}
+    # Find the deepest error in the call stack
+    deepest = max(errors, key=lambda e: e.get('depth', 0))
+    # Trace back to root cause
+    root = trace_root_cause(deepest)
+    return {'depth': deepest['depth'], 'root_cause': root}
+```

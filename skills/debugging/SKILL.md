@@ -176,3 +176,50 @@ class SWEEagentLoop:
 - 5 次失败 → 升级到人（单向门）
 - 新错误模式 → 追加到 ERRORS.md
 - 重复错误 → 检查模式库是否遗漏
+---
+
+## 交叉进化增强（v3.8）
+
+### Error Depth 深度分析（Decoding Self-Correction 论文）
+
+错误深度定义：从症状到根因的函数调用栈深度。
+
+| 深度 | 错误类型 | 修复策略 |
+|------|---------|---------|
+| 1（浅） | SyntaxError, NameError | 直接修复语法/拼写 |
+| 2（中浅） | TypeError, ImportError | 修复类型/依赖 |
+| 3（中） | AssertionError | 修复业务逻辑 |
+| 4（深） | ArchitectureError | 架构重构 |
+| 5（最深） | RequirementError | 需求澄清 |
+
+```python
+ERROR_DEPTH = {
+    "syntax": 1, "name": 1,
+    "type": 2, "import": 2,
+    "assertion": 3, "logic": 3,
+    "architecture": 4,
+    "requirement": 5,
+}
+
+def analyze_error_depth(error_trace):
+    max_d = max(ERROR_DEPTH.get(e.get('type', 'syntax'), 1) for e in error_trace)
+    if max_d <= 2:
+        return {'depth': 'shallow', 'strategy': 'direct_fix'}
+    elif max_d <= 3:
+        return {'depth': 'medium', 'strategy': 'refactor_module'}
+    else:
+        return {'depth': 'deep', 'strategy': 'architectural_review'}
+```
+
+### Reflexion 增强
+失败后不仅记录错误，还进行根因深度分析：
+
+```python
+def enhanced_reflexion(failed_task):
+    record_error(failed_task)           # 原有：记录错误
+    depth_info = analyze_error_depth(failed_task.trace)  # 新增：分析深度
+    root_cause = trace_root_cause(failed_task.trace)     # 新增：追溯根因
+    update_skill_rule(failed_task.skill, root_cause)     # 新增：更新规则
+    if failed_task.repeated >= 3:
+        crystallize_sop(failed_task)                        # 新增：SOP结晶
+```

@@ -171,3 +171,47 @@ def share_memory(namespace: str, concept_id: str, proposal: dict):
 | **elfmem** | Python 包直接调用 |
 | **memento** | MCP 服务器（跨Agent共享） |
 | **llm-wiki** | brain CLI 命令 |
+
+---
+
+## 交叉进化增强（v3.8）
+
+### Carousel Memory 轮转策略
+类似操作系统内存管理，将上下文窗口视为有限容量，按访问频率轮转：
+
+```python
+# Carousel Memory 核心逻辑
+CAROUSEL_SIZE = 10  # 最多保留 10 个活跃 memory slots
+AGING_THRESHOLD_DAYS = 7
+COMPRESS_AFTER_DAYS = 14
+
+def carousel_rotate(new_memory, existing_memories):
+    # 1. 添加新 memory
+    existing_memories.append(new_memory)
+    # 2. 按访问频率排序
+    sorted_memories = sort_by_access_frequency(existing_memories)
+    # 3. 移除最久未访问的（轮转出去）
+    if len(sorted_memories) > CAROUSEL_SIZE:
+        evicted = sorted_memories[:len(sorted_memories) - CAROUSEL_SIZE]
+        archive_to_cold_storage(evicted)
+        sorted_memories = sorted_memories[len(sorted_memories) - CAROUSEL_SIZE:]
+    return sorted_memories
+```
+
+**轮转触发条件：**
+- 新 memory 加入后超过 CAROUSEL_SIZE
+- 按最后访问时间排序，最旧的被淘汰
+- 被淘汰的 memory 归档到 COLD tier
+
+### 正交检索（EverOS 模式）
+跨维度检索记忆：用户 × 代理 × 项目
+
+```python
+def orthogonal_retrieve(query, dimensions=['user', 'agent', 'project']):
+    results = {}
+    for dim in dimensions:
+        results[dim] = search(index[dim], query, id=get_dim_id(dim))
+    # 加权合并
+    weights = {'user': 0.5, 'agent': 0.3, 'project': 0.2}
+    return weighted_merge(results, weights)
+```
