@@ -1,6 +1,7 @@
 # HANDOFF.md — 跨会话进化交接包
 
-> 生成时间：2026-09-18
+> 生成时间：2026-09-20
+> 更新：v3.7（语义早停集成 + 工作流引擎迭代）
 > 目的：当当前会话 token 耗尽时，Agnes 可从此文件接手继续进化项目
 
 ---
@@ -9,22 +10,36 @@
 
 ```
 项目：weak-model-agent-enhancement
-版本：v3.3.0
+版本：v3.7.0
+GitHub：https://github.com/1361525226/weak-model-agent-enhancement
+最新提交：eb93c7e（2026-09-20）
 工作流：7阶段（需求→设计→实现→验证→审查→复盘→发布）
 核心引擎：loop-engineering v3.5 + 闭环自进化学习 v3.3 + open-code-review-delegate
-知识库：494 个原始模式 → 392 个元模式（21% 压缩，threshold=0.25）
-Skill 数量：9 个（含 skill-evolution）
+知识库：494 原始模式 → 392 元模式（21% 压缩，threshold=0.25）
+Skill 数量：9 个 + open-code-review-delegate（10个）
 RPM 限制：~20
 Thinking：已开启（default=high，budget=2048 tokens）
+Harness Score：100/100（A级，G7七维满分）
+项目验证：57/57 通过
+基线记录：.loop/baseline.json（v3.6.0）
+语义 Checkpoint：baseline_v3.6（bb69f9aa764ff8dc）
 ```
 
-## 已完成工作（本轮）
+## 已完成工作（本轮 v3.7）
+
+### 自进化执行（已完成）
+- [x] 记录 v3.6.0 基线（Harness 100/100 A，57/57 验证通过）
+- [x] 创建语义 Checkpoint baseline_v3.6（bb69f9aa764ff8dc）
+- [x] VerifyPhase 集成 SemanticEarlyStopper（四维诊断信号）
+- [x] workflow-engine.py 新增 --semantics-history 参数
+- [x] 补全 weak-model-agent-enhancement-v2.md 知识库文档
+- [x] 验证通过 57/57，Git push eb93c7e
 
 ### 交叉进化调研（已完成）
 - [x] 分析 [loopx](https://github.com/huangruiteng/loopx) — 状态内核+控制平面
-- [x] 分析 [arXiv:2507.21046](https://arxiv.org/abs/2507.21046) 自进化Agent综述 — What/When/How/Where 四维分类
-- [x] 分析 [MemSkill arXiv:2602.02474](https://arxiv.org/abs/2602.02474) — Controller/Executor/Designer 三组件闭环
-- [x] 分析 [Awesome-Self-Evolving-Agents](https://github.com/XMUDeepLIT/Awesome-Self-Evolving-Agents) — 资源索引
+- [x] 分析 [arXiv:2507.21046](https://arxiv.org/abs/2507.21046) 自进化Agent综述
+- [x] 分析 [MemSkill arXiv:2602.02474](https://arxiv.org/abs/2602.02474)
+- [x] 分析 [Awesome-Self-Evolving-Agents](https://github.com/XMUDeepLIT/Awesome-Self-Evolving-Agents)
 
 ### 知识库整合（已完成）
 - [x] 编写 kb-consolidator.py（可重复运行）
@@ -42,20 +57,19 @@ Thinking：已开启（default=high，budget=2048 tokens）
 
 ## 下一步建议（按优先级）
 
-### P0：验证与文档
-1. 运行 `scripts/verify-project.py` 确认项目完整性
-2. 将 kb-consolidated.md 上传到「心墟的知识库」
-3. 更新 AGENTS.md 版本号到 v3.2
+### P0：持续自进化循环
+1. 运行 `workflow-engine.py "优化 AGENTS.md 第2.2节字节截断规则"` — 实测 Harness 评分变化
+2. 收集验证轮次语义信号，验证早停有效性
+3. 对比 v3.6 vs v3.7 Harness 评分（预期：维持 100 或小幅波动）
 
 ### P1：Skill 进化
-4. 根据整合结果，合并 agens-agent-patterns 中重复的 Skill
-5. 将高价值合并组（≥4x）抽象为新的 composite Skill
-6. 运行 `scripts/workflow-engine.py "生成合并后的Skill文档"` 验证
+4. 将语义早停集成经验抽象为 skill-evolution 中的新模式
+5. 检查是否有重复 Skill 可合并（当前 10 个）
 
-### P2：性能基准
-7. 在 Agnes/Aider/LangGraph 上运行同一任务集，对比性能差异
-8. 记录基准结果到 `docs/benchmark-results.md`
-9. 将最佳实践沉淀到对应 Skill 中
+### P2：性能基准与自动化
+6. 在 Agnes/ZCode 上运行同一任务集，对比不同策略（serial_r2 vs best_of_n）
+7. 设置 cron 定期运行 kb-consolidator（每周一次）
+8. 建立进化日志：每轮记录 Harness 分、验证轮次、早停触发次数
 
 ### P3：长期进化
 10. 设置 cron 定期运行 kb-consolidator（每周一次）
