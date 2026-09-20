@@ -266,14 +266,14 @@ class EvolutionExecutor:
             "task_id": task_id,
             "task": task_desc,
             "category": category,
-            "pre_harness": self.pre_task_harness,
+            "pre_harness": pre_harness,
             "status": "executing",
             "start_time": datetime.now().isoformat(),
             "elapsed_seconds": 0,
         }
 
         # 标记任务为执行中
-        executor._mark_task_running(task_id, task_desc)
+        self._mark_task_running(task_id, task_desc)
 
         return result
 
@@ -297,7 +297,7 @@ class EvolutionExecutor:
         append_evolution_log({
             "timestamp": datetime.now().isoformat(),
             "task_id": task_id,
-            "pre_harness": self.pre_task_harness,
+            "pre_harness": pre_harness,
             "post_harness": post_harness,
             "improvement": improvement,
             "elapsed": elapsed,
@@ -468,7 +468,7 @@ def run_evolution_loop(duration_minutes: int = 60, max_tasks: int = 20):
         state["tasks"] = [
             t if t.get("task_id") != task_id else {
                 **t, "status": "completed",
-                "pre_harness": complete_result.get("pre_harness", self.pre_task_harness),
+                "pre_harness": complete_result.get("pre_harness", pre_harness),
                 "post_harness": complete_result.get("post_harness", post_harness),
                 "improvement": complete_result.get("improvement", improvement),
                 "commit_hash": complete_result.get("commit_hash", commit_hash),
@@ -478,7 +478,7 @@ def run_evolution_loop(duration_minutes: int = 60, max_tasks: int = 20):
             "task_id": task_id,
             "task": task["task"],
             "status": "completed",
-            "pre_harness": self.pre_task_harness,
+            "pre_harness": pre_harness,
             "post_harness": post_harness,
             "improvement": improvement,
             "commit_hash": commit_hash,

@@ -10,7 +10,7 @@
 
 ```
 项目：weak-model-agent-enhancement
-版本：v3.7.0
+版本：v3.9.0
 GitHub：https://github.com/1361525226/weak-model-agent-enhancement
 最新提交：eb93c7e（2026-09-20）
 工作流：7阶段（需求→设计→实现→验证→审查→复盘→发布）
@@ -25,7 +25,19 @@ Harness Score：100/100（A级，G7七维满分）
 语义 Checkpoint：baseline_v3.6（bb69f9aa764ff8dc）
 ```
 
-## 已完成工作（本轮 v3.7）
+## 已完成工作（本轮 v3.8-v3.9）
+
+### 交叉进化成果（已完成 v3.8-v3.9）
+- [x] GitHub 搜索 top 5 自进化项目（CowAgent/OpenViking/GenericAgent/EverOS/MemOS）
+- [x] 提取 6 个可复用模式并整合到知识库
+- [x] AGENTS.md v3.0 → v3.8：新增三级上下文加载/SOP结晶/离线记忆反思
+- [x] loop-engineering Skill：新增 SOP 结晶 + 离线记忆反思步骤
+- [x] harness-guardrails Skill：新增 AgentDoG 诊断报告 + Error Depth 分析
+- [x] memory-system Skill：新增 Carousel Memory + 正交检索
+- [x] debugging Skill：新增 Error Depth 深度分析表 + Enhanced Reflexion
+- [x] scripts/evolution-loop.py：自进化循环器（含语义收敛检测）
+
+### 交叉进化成果（已完成 v3.8
 
 ### 自进化执行（已完成）
 - [x] 记录 v3.6.0 基线（Harness 100/100 A，57/57 验证通过）
@@ -55,27 +67,22 @@ Harness Score：100/100（A级，G7七维满分）
 | 6x | RadixAttention前缀缓存 | pattern_161, 405, 406, 408, 234... |
 | 6x | Consumer GPU推理加速 | pattern_347, 282, 302, 370, 420... |
 
+
+
 ## 下一步建议（按优先级）
 
-### P0：持续自进化循环
-1. 运行 `workflow-engine.py "优化 AGENTS.md 第2.2节字节截断规则"` — 实测 Harness 评分变化
-2. 收集验证轮次语义信号，验证早停有效性
-3. 对比 v3.6 vs v3.7 Harness 评分（预期：维持 100 或小幅波动）
+### P0：持续进化循环
+1. evolution-loop.py 已在后台运行（180分钟/20任务）
+2. 监控 .loop/evolution-state.json 追踪进度
+3. 每完成一个任务自动验证 Harness 评分变化
 
-### P1：Skill 进化
-4. 将语义早停集成经验抽象为 skill-evolution 中的新模式
-5. 检查是否有重复 Skill 可合并（当前 10 个）
+### P1：知识库深度整合
+4. 运行 kb-consolidator.py 重新整合（含 6 个新模式）
+5. 检查是否可进一步压缩（目标：392 → 350）
 
-### P2：性能基准与自动化
-6. 在 Agnes/ZCode 上运行同一任务集，对比不同策略（serial_r2 vs best_of_n）
-7. 设置 cron 定期运行 kb-consolidator（每周一次）
-8. 建立进化日志：每轮记录 Harness 分、验证轮次、早停触发次数
-
-### P3：长期进化
-10. 设置 cron 定期运行 kb-consolidator（每周一次）
-11. 建立性能追踪仪表板（每轮 Loop 记录关键指标）
-12. 月度复盘：评估各阶段增益，调整 threshold 参数
-
+### P2：Skill 精炼
+6. 检查 10 个 Skill 是否有功能重叠可合并
+7. 为每个 Skill 添加交叉进化来源标注
 ## 关键文件索引
 
 | 文件 | 用途 |
