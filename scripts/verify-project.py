@@ -16,7 +16,7 @@ import sys
 import subprocess
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.resolve()
+PROJECT_ROOT = Path(__file__).parent.parent.resolve()
 PASS = "✅"
 FAIL = "❌"
 WARN = "⚠️"

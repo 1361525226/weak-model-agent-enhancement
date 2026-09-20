@@ -112,3 +112,26 @@
 
 ---
 
+
+## full_workflow — 集成语义早停到工作流
+
+**时间**: 2026-09-20T19:51:31.823903
+**状态**: completed
+
+**详情**:
+{
+  "strategy": "auto",
+  "candidates": 3,
+  "phases": [
+    "spec",
+    "design",
+    "implement",
+    "verify",
+    "review",
+    "reflect",
+    "release"
+  ]
+}
+
+---
+
