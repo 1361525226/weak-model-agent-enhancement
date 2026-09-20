@@ -1,6 +1,6 @@
 {
   "project_name": "weak-model-agent-enhancement",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "created_at": "2026-09-15",
   "description": "弱模型Agent性能增强项目v3.0 — 7阶段工作流×Best-of-N×Token换性能×持续进化",
   "workspace": {
@@ -109,11 +109,6 @@
       "direction": "diagnostic_guardrails"
     },
     {
-      "title": "Crab",
-      "date": "2026-04-30",
-      "direction": "semantic_checkpoint"
-    },
-    {
       "title": "Sleep-time Compute",
       "date": "2025-04-17",
       "direction": "offline_consolidation"
@@ -129,28 +124,35 @@
       "direction": "verified_synthesis"
     },
     {
-      "title": "Semantic Early-Stopping",
-      "date": "2026-06-25",
-      "absorbed": true,
-      "module": "semantic_early_stop"
-    },
-    {
-      "title": "ContextPipe",
-      "date": "2026-09-01",
-      "absorbed": true,
-      "module": "harness/contextpipe"
-    },
-    {
-      "title": "ToolRegistry",
-      "date": "2025-07-11",
-      "absorbed": true,
-      "module": "tool_management"
-    },
-    {
       "title": "Calibration is the Bottleneck",
       "date": "2026-09-01",
       "absorbed": true,
       "module": "harness/code"
+    },
+    {
+      "title": "Crab: Semantics-Aware Checkpoint",
+      "date": "2026-04-30",
+      "absorbed": true
+    },
+    {
+      "title": "DeltaBox: Millisecond Checkpoint",
+      "date": "2026-05-21",
+      "absorbed": true
+    },
+    {
+      "title": "Context Assembly as Controlled Variable",
+      "date": "2026-07-28",
+      "absorbed": true
+    },
+    {
+      "title": "ToolRegistry",
+      "date": "2025-07-11",
+      "absorbed": true
+    },
+    {
+      "title": "Calibration is the Bottleneck",
+      "date": "2026-09-01",
+      "absorbed": true
     }
   ],
   "next_phase": "harness_code化",
@@ -220,6 +222,12 @@
     },
     "semantic_early_stop": {
       "early_stopping": "v1.0"
+    },
+    "semantic_checkpoint": {
+      "checkpoint": "v1.0"
+    },
+    "tool_registry": {
+      "registry": "v1.0"
     },
     "skills": 9,
     "kb_patterns": 392
