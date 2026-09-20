@@ -273,7 +273,7 @@ class EvolutionExecutor:
         }
 
         # 标记任务为执行中
-        self._mark_task_running(task_id, task_desc)
+        executor._mark_task_running(task_id, task_desc)
 
         return result
 
@@ -464,24 +464,24 @@ def run_evolution_loop(duration_minutes: int = 60, max_tasks: int = 20):
                 log(f"✅ 已提交并推送: {commit_hash}")
 
         # 标记任务完成
-        result = executor.complete(task_id, post_harness, improvement, changes, commit_hash)
+        complete_result = executor.complete(task_id, post_harness, improvement, changes, commit_hash)
         state["tasks"] = [
             t if t.get("task_id") != task_id else {
                 **t, "status": "completed",
-                "pre_harness": result["pre_harness"],
-                "post_harness": result["post_harness"],
-                "improvement": result["improvement"],
-                "commit_hash": result["commit_hash"],
+                "pre_harness": complete_result.get("pre_harness", self.pre_task_harness),
+                "post_harness": complete_result.get("post_harness", post_harness),
+                "improvement": complete_result.get("improvement", improvement),
+                "commit_hash": complete_result.get("commit_hash", commit_hash),
             }
             for t in state.get("tasks", [])
         ] + [{
             "task_id": task_id,
             "task": task["task"],
             "status": "completed",
-            "pre_harness": result["pre_harness"],
-            "post_harness": result["post_harness"],
-            "improvement": result["improvement"],
-            "commit_hash": result["commit_hash"],
+            "pre_harness": self.pre_task_harness,
+            "post_harness": post_harness,
+            "improvement": improvement,
+            "commit_hash": commit_hash,
             "completed_at": datetime.now().isoformat(),
         }]
 
