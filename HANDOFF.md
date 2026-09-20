@@ -9,7 +9,7 @@
 
 ```
 项目：weak-model-agent-enhancement
-版本：v3.2.0
+版本：v3.3.0
 工作流：7阶段（需求→设计→实现→验证→审查→复盘→发布）
 核心引擎：loop-engineering v3.5 + 闭环自进化学习 v3.3 + open-code-review-delegate
 知识库：494 个原始模式 → 392 个元模式（21% 压缩，threshold=0.25）

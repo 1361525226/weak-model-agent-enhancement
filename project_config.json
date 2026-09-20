@@ -1,6 +1,6 @@
 {
   "project_name": "weak-model-agent-enhancement",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "created_at": "2026-09-15",
   "description": "弱模型Agent性能增强项目v3.0 — 7阶段工作流×Best-of-N×Token换性能×持续进化",
   "workspace": {
@@ -91,5 +91,43 @@
     "before": 494,
     "after": 392,
     "threshold": 0.25
-  }
+  },
+  "papers_integrated": [
+    {
+      "title": "HarnessRisk",
+      "date": "2026-08-18",
+      "direction": "safety_lifecycle"
+    },
+    {
+      "title": "Code as Agent Harness",
+      "date": "2026-05-18",
+      "direction": "code_harness"
+    },
+    {
+      "title": "AgentDoG",
+      "date": "2026-01-26",
+      "direction": "diagnostic_guardrails"
+    },
+    {
+      "title": "Crab",
+      "date": "2026-04-30",
+      "direction": "semantic_checkpoint"
+    },
+    {
+      "title": "Sleep-time Compute",
+      "date": "2025-04-17",
+      "direction": "offline_consolidation"
+    },
+    {
+      "title": "Oracle Agent Memory",
+      "date": "2026-07-14",
+      "direction": "memory_substrate"
+    },
+    {
+      "title": "SEVerA",
+      "date": "2026-03-26",
+      "direction": "verified_synthesis"
+    }
+  ],
+  "next_phase": "harness_code化"
 }
